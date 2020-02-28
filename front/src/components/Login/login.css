@@ -1,0 +1,8 @@
+.auth-form {
+    max-width: 30%;
+    margin: auto;
+}
+.error {
+    color: #a94442;
+    text-align: center;
+}
