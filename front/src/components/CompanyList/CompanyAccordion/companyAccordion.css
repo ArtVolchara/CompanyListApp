@@ -1,0 +1,97 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+
+}
+
+.card-header {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+}
+.card-header .btn {
+    color: #337ab7;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 0px;
+    background-color: transparent;
+}
+
+.btn-button {
+    padding:4px
+}
+
+.btn-button:hover {
+    border-top-color: rgb(238, 238, 238);
+    border-right-color: rgb(238, 238, 238);
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(238, 238, 238);
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.btn-button:focus {
+    outline-color: #337ab7
+}
+
+.card-header .btn:active{
+    color: #555555;
+}
+.card-body {
+    font-size: 10px;
+    color: #555555;
+}
+.card-body-list {
+    margin: 0px;
+}
+.list-group-item {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 0px;
+    padding: 0px;
+}
+
+.okved {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+}
+.okved-head-main{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.body-ul{
+    width: 50%;
+    list-style-type: none;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.okved-head {
+    color: #337ab7;
+    width: 50%;
+    text-align: left;
+}
+
+.okved-body {
+    text-align: left;
+    width: 50%;
+}
+.head {
+    color: #337ab7;
+    width: 15%;
+    text-align: right;
+    padding-right: 5px;
+    margin: 0px;
+}
+.body {
+    padding-left: 5px;
+}
+.products-button {
+    font-size: 10px;
+    width: 100%;
+    left: 0; right: 0; bottom: 0; 
+}

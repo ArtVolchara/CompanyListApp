@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "companyId": "AWXynW48hvnrhv3PBzCm",
+      "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+      "type": "waranty",
+      "requiredDate": "2020-01-31"
+    },
+    {
+      "companyId": "AWXynW48hvnrhv3PBzCm",
+      "id": "2c5ea4c0-4067-11e9-8b2d-1b9d6bcdbbfd",
+      "type": "loan",
+      "requiredDate": "2020-02-28"
+    },
+    {
+      "companyId": "AWXynW48hvnrhv3PBzCm",
+      "id": "9125a8dc-52ee-365b-a5aa-81b0b3681cf6",
+      "type": "scs-account",
+      "requiredDate": "2020-03-29"
+    }
+  ]
+}

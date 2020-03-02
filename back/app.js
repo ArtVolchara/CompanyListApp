@@ -1,12 +1,12 @@
 const useMiddleware = require('./middleware');
 const createError = require('http-errors');
 
-useMiddleware(app);
 const express = require('express');
 
 const usersRouter = require('./routes/users');
-
+const companiesRouter = require('./routes/companies');
 const app = express();
+useMiddleware(app);
 
 
 // Подключаем mongoose.
@@ -18,7 +18,7 @@ mongoose.connect(
 );
 
 app.use('/api/users/', usersRouter);
-
+app.use('/api/companies/', companiesRouter)
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
   next(createError(404));

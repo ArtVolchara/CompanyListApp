@@ -16,9 +16,9 @@ import {
 
 class MyNavbar extends React.Component {
 
-    async logout() {
+    logout() {
         //logout на сервер
-        await this.props.logoutFetch()
+        this.props.logoutFetch()
     }
 
     render() {

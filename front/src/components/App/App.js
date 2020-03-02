@@ -7,8 +7,9 @@ import Login from '../Login/login'
 import Registration from '../Registration/registration'
 
 import PrivateRoute from '../Routes/privateRoute'
-import Home from '../Home/homepage'
-
+import CompanyList from '../CompanyList/companyList'
+import ProductList from '../ProductList/productList'
+import ErrorPage from '../ErrorPage/errorPage'
 import './App.css';
 
 export default class App extends React.Component {
@@ -21,7 +22,9 @@ export default class App extends React.Component {
           <Switch>
             <Route exact path='/login' component={Login} />
             <Route exact path='/registration' component={Registration}/>
-            <PrivateRoute exact path='/' Component={Home} />
+            <PrivateRoute exact path='/' Component={CompanyList} />
+            <PrivateRoute exact path='/companies/:id/products' component={ProductList}/>
+            <PrivateRoute path="*" component={ErrorPage}/>
           </Switch>
         </div>
       </Router>

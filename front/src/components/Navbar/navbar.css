@@ -2,4 +2,14 @@
     display: flex;
     width: 100%;
     justify-content: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.nav-tabs > li > a {
+    margin: 0px;
+}
+
+.nav-tabs > li > a:focus {
+    outline-color: #337ab7
 }

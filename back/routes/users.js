@@ -40,7 +40,7 @@ router.route('/registration')
 router.route('/login')
   .post(async (req, res) => {
     try {
-      const loginError = new Error('Неправильный логин или пароль. Попробуйте еще раз');
+      const loginError = new Error('User does not exist or provided account data is incorrect.');
       const user = await User.findOne({ username: req.body.username });
       if (user && (await bcrypt.compare(req.body.password, user.password))) {
         req.session.username = user.username;
@@ -49,7 +49,7 @@ router.route('/login')
         throw loginError;
       }
     } catch (error) {
-      if (error.message === 'Неправильный логин или пароль. Попробуйте еще раз') {
+      if (error.message === 'User does not exist or provided account data is incorrect.') {
         res.status(400).json(error.message);
       }
     }

@@ -1,0 +1,58 @@
+.paginationDiv {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.paginationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    padding: 0px;
+    margin-top:15px
+
+}
+.page-item {
+
+    position: relative;
+    display: block;
+    float: left;
+    text-align: -webkit-match-parent;
+    margin-top:-0.5px;
+}
+.page-item > a {
+    font-size: 16px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 0 0 4px 4px;
+}
+.page-item.active > a {
+    color: #555555;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+}
+.page-item > a:hover {
+    margin-top:-0.5px;
+    border-top-color: rgb(238, 238, 238);
+    border-right-color: rgb(238, 238, 238);
+    border-bottom-color: rgb(221, 221, 221);
+    border-left-color: rgb(238, 238, 238);
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.page-item.active > a:hover {
+    cursor: default;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-top-color: transparent;
+    background-color: #fff;
+}
+.page-item > a:focus {
+    outline-color: #337ab7
+}

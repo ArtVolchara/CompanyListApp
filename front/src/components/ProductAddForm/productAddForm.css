@@ -1,0 +1,21 @@
+.productAddForm {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.addForm-group {
+    margin: 0px;
+}
+.form-label {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.calendar {
+    width: 100%;
+}
+.productAdd-button {
+    border-radius: 0 0 4px 4px;
+    font-size: 14px;
+    width: 100%;
+    left: 0; right: 0; bottom: 0; 
+}

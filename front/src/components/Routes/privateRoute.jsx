@@ -9,10 +9,10 @@ import Preloader from "../Preloader/preloader"
 
 
 
-class PrivateRoute extends React.Component {
+class PrivateRoute extends React.PureComponent {
   async componentDidMount() {
     //проверка авторизации
-    this.props.isLoggedFetch()
+    await this.props.isLoggedFetch()
   }
   render() {
     const Component = this.props.Component;
